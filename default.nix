@@ -24,13 +24,13 @@ let
     };
   };
 
-  syntax-module = modifiedHaskellPackages.callPackage ./syntax-module.nix {};
-  modified-syntax-module = pkgs.haskell.lib.overrideCabal module (drv: {
+  course = modifiedHaskellPackages.callPackage ./course.nix {};
+  modified-course = pkgs.haskell.lib.overrideCabal module (drv: {
     # Dodgy fun times, make sure that
     # - the tests compile
     # - the tests failing doesn't cause the build to fail
     checkPhase = "true";
   });
 in
-  modified-syntax-module
+  modified-course
 
