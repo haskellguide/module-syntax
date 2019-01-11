@@ -1,0 +1,86 @@
+name:                 course
+version:              1.0.0
+license:              BSD3
+license-file:         LICENCE
+                      Geoffrey Huntley <ghuntley@ghuntley.com>
+author:               Tony Morris <tmorris@tmorris.net>
+                      Mark Hibberd <mthibberd@gmail.com>
+                      Ben Sinclair <ben.d.sinclair@gmail.com>
+                      James Earl Douglas <james@earldouglas.com>
+                      Eric Torreborre <etorreborre@yahoo.com>
+maintainer:           Geoffrey Huntley
+                      Copyright (C) 2019      Geoffrey Huntley
+copyright:            Copyright (C) 2010-2013 Tony Morris
+                      Copyright (C) 2012-2015 National ICT Australia Limited
+                      Copyright (C) 2012      James Earl Douglas
+                      Copyright (C) 2012      Ben Sinclair
+                      Copyright (C) 2016-2017 Data61
+synopsis:             Source code for a functional programming course
+category:             Education
+description:          Source code for a course in functional programming using Haskell
+homepage:             https://github.com/haskellguide/module-syntax
+bug-reports:          https://github.com/haskellguide/module-syntax/issues
+cabal-version:        >= 1.10
+build-type:           Simple
+tested-with:          GHC == 7.10.3, GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.2
+extra-source-files:   README.md
+
+source-repository     head
+  type:               git
+  location:           git@github.com:haskellguide/module-syntax.git
+
+library
+  default-language:   Haskell2010
+
+  build-depends:      base < 5 && >= 4
+                      , containers >= 0.4
+                      , array >= 0.4
+
+  ghc-options:        -Wall
+                      -fwarn-incomplete-uni-patterns
+                      -fno-warn-unused-binds
+                      -fno-warn-unused-do-bind
+                      -fno-warn-unused-imports
+                      -fno-warn-type-defaults
+                      -ferror-spans
+
+  default-extensions: NoImplicitPrelude
+                      ScopedTypeVariables
+                      InstanceSigs
+
+  hs-source-dirs:     src
+
+  exposed-modules:    Course
+                      Course.Core
+                      Course.ExactlyOne
+                      Course.Validation
+
+
+test-suite            tasty
+  type:
+                      exitcode-stdio-1.0
+
+  main-is:
+                      TastyLoader.hs
+  other-modules:
+                      Course.ValidationTest
+
+  default-language:
+                      Haskell2010
+
+  build-depends:
+                      base < 5 && >= 3
+                      , containers >= 0.4
+                      , course
+                      , HUnit >= 1.5
+                      , QuickCheck >= 2.9
+                      , tasty >= 1
+                      , tasty-hunit >= 0.9
+                      , tasty-quickcheck >= 0.8
+
+  ghc-options:
+                      -Wall
+                      -threaded
+
+  hs-source-dirs:
+                      test
