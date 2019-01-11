@@ -1,4 +1,4 @@
-name:                 course
+name:                 syntax-module
 version:              1.0.0
 license:              BSD3
 license-file:         LICENCE
@@ -15,9 +15,9 @@ copyright:            Copyright (C) 2010-2013 Tony Morris
                       Copyright (C) 2012      James Earl Douglas
                       Copyright (C) 2012      Ben Sinclair
                       Copyright (C) 2016-2017 Data61
-synopsis:             Source code for a functional programming course
+synopsis:             Examples of data structures and syntax that provide a cursory examination of Haskell syntax
 category:             Education
-description:          Source code for a course in functional programming using Haskell
+description:          Examples of data structures and syntax that provide a cursory examination of Haskell syntax
 homepage:             https://github.com/haskellguide/syntax-module
 bug-reports:          https://github.com/haskellguide/syntax-module/issues
 cabal-version:        >= 1.10
