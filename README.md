@@ -1,5 +1,8 @@
-% Haskell for Readers
-% [Joachim Breitner](http://www.joachim-breitner.de/), [DFINITY Foundation](https://dfinity.org/)
+# syntax module
+
+# acknowledgments
+
+This learning module is a composition of work by [Joachim Breitner](http://haskell-for-readers.nomeata.de/) which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the [CSIRO Data61 functional programming laboratory](https://github.com/data61/fp-course). This module would not be possible without them for permitting us to remix their work.
 
 Preface {.unnumbered}
 =======
@@ -20,9 +23,6 @@ The exercises are all very small, in the order of minutes, and are meant to be d
 
 Some sections are marked with ★. These are optional in the sense that the following material does not rely heavily on them. If time is short, e.g. during a workshop, they can be skipped, and the participants can be invited to come back to them on their own.
 
-# acknowledgments
-
-This learning module is a composition of work by Joachim Breitner which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the Data61 functional programming laboratorya We thank them for their generiousity and allowing us to remix their work.
 
 The basics of functional programming
 ====================================
