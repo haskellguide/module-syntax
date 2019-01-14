@@ -1456,3 +1456,8 @@ Zooming out some more, we come across packages: A *package* is a collection of m
 
 Almost all publicly available Haskell packages are hosted centrally on [Hackage](http://hackage.haskell.org/packages/), including the haddock-generated documentation and cross-linked source code. They can be easily installed using the [`cabal` tool](https://www.haskell.org/cabal/), or alternative systems like [`stack`](https://www.haskellstack.org/) or [`nix`](https://nixos.org/nixpkgs/manual/#users-guide-to-the-haskell-infrastructure).
 The packages on Hackage cover many common needs and it is expected that a serious Haskell project depends on dozen of Haskell packages from Hackage.
+
+
+# License
+This module is a composition of work by http://haskell-for-readers.nomeata.de/ and the data61 functional programming course. See LICENSE.md for specifics.
+
