@@ -6,10 +6,6 @@ Preface {.unnumbered}
 
 Welcome to the lecture series “Haskell for Readers”. This workshop is uniquely tailored to those who need to *read*, rather than *write* Haskell code: auditors, scientists, managers, testers etc.
 
-### Status {.unnumbered}
-
-This document is work in progress (but whatever chapters and sections are there ought to be … usable). 
-
 ### Scope {.unnumbered}
 
 This goal implies a higher focus on syntax (because you can *write* programs ignoring most syntactic gadgets available to you, but if you read code, you have to deal with them), types and type signatures (because they are the key to understanding Haskell code) and abstraction patterns (because it is key to understanding well-written code, and Haskell excels at abstraction).
@@ -18,25 +14,15 @@ On the other hand, less words will be spent on how to approach writing the progr
 
 Nevertheless it is hard to understand a programming paradigm without writing any code, so there will some amount of hands-on work to be done, especially early on, when we start with a introduction to basic functional programming.
 
-### Form {.unnumbered}
-
-This document is not (necessarily) a self-contained tutorial; it is rather the base for an interactive lecture, given by a real instructor. In such a lecture, some holes will be filled as we go, and the questions from the audience form a crucial part of the learning experience.
-
-This document is also meant to be more on the concise side, assuming the audience is shorter on time than on wits, and in a small, live workshop, the lecturer can add details, come up with more examples and slow down as needed.
-
-This makes these notes less ideal for independent study, but that said, it should be possible to work attentively through them and still learn a lot.
-
-### Audience {.unnumbered}
-
 I expect the audience to be familiar with programming and computer science in general, but do not assume prior knowledge of functional program (or, in case you are worried about this, category theory).
 
 The exercises are all very small, in the order of minutes, and are meant to be done along the way, especially as later material may refer to their results. If you are reading this on your own and you really do not feel like doing them, you can click on the blurred solutions to at least read them. The exercises are not sufficient in number and depths to provide the reader the experience needed to really learn Haskell.
 
 Some sections are marked with ★. These are optional in the sense that the following material does not rely heavily on them. If time is short, e.g. during a workshop, they can be skipped, and the participants can be invited to come back to them on their own.
 
-### Acknowledgments and license {.unnumbered}
+# acknowledgments
 
-The creation of this material was sponsored by the [DFINITY Foundation](http://dfinity.org/), and is shared with the public under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You can view [the source on GitHub](https://github.com/nomeata/haskell-for-readers/) of this document, and submit improvements there.
+This learning module is a composition of work by Joachim Breitner which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the Data61 functional programming laboratorya We thank them for their generiousity and allowing us to remix their work.
 
 The basics of functional programming
 ====================================
