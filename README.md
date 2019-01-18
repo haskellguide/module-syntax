@@ -2,15 +2,15 @@
 
 Welcome to the syntax module of the [HaskellGuide study plan](https://github.com/haskellguide/haskell-study-guide) which is a syllabus that is uniquely tailored to those who *learn by doing*, rather than *learn by reading*.  What makes HaskellGuide unique is the focus and care in ensuring your learning experience is buttery smooth.
 
-No software installation will be required at any stage as we have integrated with the lovely folks at GitPod to deliver you a world class experience. With HaskellGuide you'll learn faster and start authoring code sooner. 
+No software installation will be required at any stage as we have integrated with the lovely folks at GitHub Education and GitPod to deliver you a world class experience. With HaskellGuide you'll learn faster and start authoring code sooner. 
 
-In this module you'll be introduced to functional programming concepts, the syntax of Haskell and provided with easy excercises to apply your learnings in a fully configured modern web-based IDE. We assume no existing experience with functional programming or Haskell.
+In this module you'll be introduced to functional programming concepts, the syntax of Haskell and are provided with easy excercises to apply your learnings in a fully configured modern web-based IDE. We assume experience with programming but absolutely no exposure to functional programming concepts or Haskell.
 
 If you experience any isues at all, please open a GitHub issue and leave feedback. We ❤️ contributions and pull-requests.
 
 # acknowledgments
 
-This learning module is a composition of work by [Joachim Breitner](http://haskell-for-readers.nomeata.de/) which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the [CSIRO Data61 functional programming laboratory](https://github.com/data61/fp-course) with much ️❤️ sprinkled on top.
+This learning module is a composition of work by [Joachim Breitner](http://haskell-for-readers.nomeata.de/) which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the [CSIRO Data61 functional programming laboratory](https://github.com/data61/fp-course) with much ️care sprinkled on top.
 
 # you can do this
 
@@ -20,9 +20,7 @@ Don't feel you aren't smart enough. Successful software engineers are smart, but
 - [Believe you can change](http://www.aaronsw.com/weblog/dweck)
 
 
-
-Preface {.unnumbered}
-=======
+# table of contents
 
 
 On the other hand, less words will be spent on how to approach writing the program, e.g. how to set up your tooling, how to please Haskell’s layout rules, how to design your data type, which libraries to pick, how to read error messages. That said, we hope that even Haskell programmers will gain useful insight from tutorial.
