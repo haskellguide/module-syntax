@@ -1,17 +1,27 @@
 # syntax module
 
+Welcome to the syntax module of the [HaskellGuide study plan](https://github.com/haskellguide/haskell-study-guide) which is a syllabus that is uniquely tailored to those who *learn by doing*, rather than *learn by reading*.  What makes HaskellGuide unique is our focus and care on ensuring your learning experience is buttery smooth. No software installation will be required at any stage as we have partnered with lovely folks at GitPod to deliver you a world class experience that gets you up and running with a fully configured modern web-based IDE. With HaskellGuide you'll start authoring code sooner and learn faster. 
+
+In this module you'll be introduced to functional programming concepts and the syntax of Haskell. We assume no existing experience with functional programming or Haskell.
+
+If you experience any isues at all, please open a GitHub issue and leave feedback. We ❤️ contributions and pull-requests.
+
 # acknowledgments
 
-This learning module is a composition of work by [Joachim Breitner](http://haskell-for-readers.nomeata.de/) which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the [CSIRO Data61 functional programming laboratory](https://github.com/data61/fp-course). This module would not be possible without them for permitting us to remix their work.
+This learning module is a composition of work by [Joachim Breitner](http://haskell-for-readers.nomeata.de/) which was sponsored by [DFINITY Foundation](http://dfinity.org/) and the [CSIRO Data61 functional programming laboratory](https://github.com/data61/fp-course) with much ️❤️ sprinkled on top.
+
+# you can do this
+
+Don't feel you aren't smart enough. Successful software engineers are smart, but many have an insecurity that they aren't smart enough. We have found through observation that this is especially true for when a new paradigm needs to be learned:
+- [The myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
+- [It's Dangerous to Go Alone: Battling the Invisible Monsters in Tech](https://www.youtube.com/watch?v=1i8ylq4j_EY)
+- [Believe you can change](http://www.aaronsw.com/weblog/dweck)
+
+
 
 Preface {.unnumbered}
 =======
 
-Welcome to the lecture series “Haskell for Readers”. This workshop is uniquely tailored to those who need to *read*, rather than *write* Haskell code: auditors, scientists, managers, testers etc.
-
-### Scope {.unnumbered}
-
-This goal implies a higher focus on syntax (because you can *write* programs ignoring most syntactic gadgets available to you, but if you read code, you have to deal with them), types and type signatures (because they are the key to understanding Haskell code) and abstraction patterns (because it is key to understanding well-written code, and Haskell excels at abstraction).
 
 On the other hand, less words will be spent on how to approach writing the program, e.g. how to set up your tooling, how to please Haskell’s layout rules, how to design your data type, which libraries to pick, how to read error messages. That said, we hope that even Haskell programmers will gain useful insight from tutorial.
 
