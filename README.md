@@ -1,8 +1,10 @@
 # syntax module
 
-Welcome to the syntax module of the [HaskellGuide study plan](https://github.com/haskellguide/haskell-study-guide) which is a syllabus that is uniquely tailored to those who *learn by doing*, rather than *learn by reading*.  What makes HaskellGuide unique is our focus and care on ensuring your learning experience is buttery smooth. No software installation will be required at any stage as we have partnered with lovely folks at GitPod to deliver you a world class experience that gets you up and running with a fully configured modern web-based IDE. With HaskellGuide you'll start authoring code sooner and learn faster. 
+Welcome to the syntax module of the [HaskellGuide study plan](https://github.com/haskellguide/haskell-study-guide) which is a syllabus that is uniquely tailored to those who *learn by doing*, rather than *learn by reading*.  What makes HaskellGuide unique is the focus and care in ensuring your learning experience is buttery smooth.
 
-In this module you'll be introduced to functional programming concepts and the syntax of Haskell. We assume no existing experience with functional programming or Haskell.
+No software installation will be required at any stage as we have integrated with the lovely folks at GitPod to deliver you a world class experience that gets you up and running with a fully configured modern web-based IDE. With HaskellGuide you'll learn faster and start authoring code sooner. 
+
+In this module you'll be introduced to functional programming concepts, the syntax of Haskell and provided with easy excercises to apply your learnings. We assume no existing experience with functional programming or Haskell.
 
 If you experience any isues at all, please open a GitHub issue and leave feedback. We ❤️ contributions and pull-requests.
 
