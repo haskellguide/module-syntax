@@ -607,8 +607,7 @@ Prelude> sumSumDigits = twice sumDigits
 ```
 </details>
 
-Currying
---------
+# currying
 
 We have already seen functions that *receive* a function as an argument. The way we use `twice` or `sumDigitsWith` here, we can think of them as a function that *return* functions. And this brings us to the deep and beautiful explanation we write multiple arguments to functions the way we do: Because really, every function only ever has one argument, and returns another one.
 
