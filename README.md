@@ -473,7 +473,8 @@ Prelude> countDigits (countDigits (15^15))
 ```
 
 Clearly, we can abstract over the argument here:
-```
+
+```haskell
 Prelude> countCountDigits n = countDigits (countDigits n)
 Prelude> countCountDigits (10^123)
 3
