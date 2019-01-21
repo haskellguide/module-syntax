@@ -321,6 +321,12 @@ And now we are squarely in the realm of functional programming, as we have just 
 
 Note that we defined the `isRound` by way of an equation. And it really is an equation: Wherever we see `isRound something`, we can obtain its meaning by replacing it with ``something `mod` 10 == 0``. This *equational reasoning*, where you replace equals by equals, is one key technique to make sense of Haskell programs.
 
+### exercises
+
+<details>
+<summary>
+</summary>
+</details>
 ::: Exercise
 Discuss: Think of other programming language that have concepts called functions. Can you always replace a function call with the function definition? Does it change the meaning of the program?
 :::
