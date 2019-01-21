@@ -226,13 +226,13 @@ I call this non-syntactic sugar, because the dollar operator it is not part of t
 
 <details>
 <summary>
+What is the result of
+```haskell
+Prelude> (-) 5 $ div 16 $ (-) 10 $ 4 `div` 2
+```
 </summary>
 </details>
 ::: Exercise
-What is the result of
-```
-Prelude> (-) 5 $ div 16 $ (-) 10 $ 4 `div` 2
-```
 :::
 
 ::: Solution
