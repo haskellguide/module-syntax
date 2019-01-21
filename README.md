@@ -103,13 +103,9 @@ Let us ignore the first line (which is the type signature): The `r` in `infixr` 
 <details>
 <summary>What associativity do you expect for `(+)` and `(-)`? Verify your expectation.
 </summary>
+Both operator are left-associative, so that `10 - 2 + 3 - 4` means `((10 - 2) + 3) - 4` as expected.
 </details>
 
-::: Exercise
-:::
-
-::: Solution
-Both operator are left-associative, so that `10 - 2 + 3 - 4` means `((10 - 2) + 3) - 4` as expected.
 :::
 
 ::: Exercise
