@@ -525,12 +525,16 @@ These two functions share something: They share a behavior! Both iterate over th
 Prelude> always1 n = 1
 Prelude> countDigits n = if n < 10 then always1 n else countDigits (n `div` 10) + always1 (n `mod` 10)
 ```
+
 And for `sumDigits`, we use the digit as is. And we have already seen a function that just returns its argument, the identity function:
-```
+
+```haskell
 Prelude> sumDigits n = if n < 10 then id n else sumDigits (n `div` 10) + id (n `mod` 10)
 ```
+
 Now the common pattern is clear, and we can abstract over the different parts:
-```
+
+```haskell
 Prelude> sumDigitsWith f n = if n < 10 then f n else sumDigitsWith f (n `div` 10) + f (n `mod` 10)
 Prelude> countDigits n = sumDigitsWith always1 n
 Prelude> sumDigits n = sumDigitsWith id n
@@ -542,6 +546,9 @@ This single mechanism -- abstracting over functions -- can [replace thick volume
 
 Note that if one would have to abstract `countDigits` and `sumDigits` to `sumDigitsWith` in practice, one would probably not rewrite them first with `id` etc., but just look at them and come up with `sumDigitsWith` directly.
 
+### excercises
+<details>
+<summary>
 ::: Exercise
 Write a (recursive) function `fixEq` so that `fixEq f x` repeatedly applies `f` to `x` until the result does not change.
 :::
