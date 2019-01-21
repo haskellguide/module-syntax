@@ -156,8 +156,8 @@ Prelude> const 23 42
 
 <details>
 <summary>Can you predict the result of the following?
-Prelude> 1 + const 2 3 + 4
 
+Prelude> 1 + const 2 3 + 4
 </summary>
 </details>
 ::: Exercise
