@@ -672,7 +672,8 @@ Prelude> const 1 (0 `div` 0)
 ```
 
 To see why this is so crucial for abstraction, consider the following two functions that implement a safe version of `div` and `mod` that just returns 0 if the user tries to divide by 0:
-```
+
+```haskell
 Prelude> x `safeDiv` y = if y == 0 then 0 else x `div` y
 Prelude> x `safeMod` y = if y == 0 then 0 else x `mod` y
 Prelude> 10 `safeDiv` 5
@@ -683,7 +684,7 @@ Prelude> 10 `safeDiv` 0
 
 Clearly, the definitions of `safeDiv` and `safeMod` share a pattern. So let us extract the pattern “if y is zero then return zero else do something else”:
 
-```
+```haskell
 Prelude> unlessZero y z = if y == 0 then 0 else z
 Prelude> x `safeDiv` y = unlessZero y (x `div` y)
 Prelude> x `safeMod` y = unlessZero y (x `mod` y)
