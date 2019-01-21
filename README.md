@@ -443,18 +443,17 @@ The fact that we can replace equals with equals does not change just because we 
 = 3
 ```
 
-::: Exercise
+<details>
+<summary>
 Write the function `sumDigits` that sums up the digits of a natural number.
-:::
+</summary>
 
-::: Solution
 ```haskell
 sumDigits n = if n < 10 then n else sumDigits (n `div` 10) + (n `mod` 10)
 ```
-:::
+</details>
 
-Higher-order functions
-----------------------
+# higher-order functions
 
 We created functions when we took expressions that followed a certain pattern, and abstracted over a number that occurred therein. But the thing we can abstract over does not have to be just a simple number. It could also be a function!
 
