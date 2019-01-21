@@ -173,7 +173,8 @@ Prelude> 7
 
 **Infix operator application (syntactic sugar)**:
 Functions that take two arguments can be written infix, as if they were an operator, by putting backticks around the name:
-```
+
+```haskell
 Prelude> 123 `div` 10
 12
 Prelude> 123 `mod` 10
