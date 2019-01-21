@@ -581,12 +581,11 @@ Prelude> sumDigits n = sumDigitsWith (\d -> d) n
 
 These are also called *lambda abstractions*, because they are derived from the Lambda calculus, and the backslash is a poor imitation of the Greek letter lambda (λ).
 
-Higher-order function definition
---------------------------------
+# higher-order function definition
 
 Lets look at the previous two definitions, and remember that when we define a function this way, we define what to replace the left-hand side with. But notice that the argument `n` is not touched at all by this definition! So we should get the same result if we simply omit it from the equation, right? And indeed, we can just as well write
 
-```
+```haskell
 Prelude> countDigits = sumDigitsWith (\d -> 1)
 Prelude> sumDigits = sumDigitsWith (\d -> d)
 ```
