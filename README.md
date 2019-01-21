@@ -187,7 +187,8 @@ Prelude> ((120 + 3) `div` 10) ^ 2
 144
 ```
 We see that written as operators, even functions have an associativity and precedence:
-```
+
+```haskell
 Prelude> :info div
 class (Real a, Enum a) => Integral a where
   ...
@@ -199,7 +200,8 @@ infixl 7 `div`
 
 **Prefix operator application (syntactic sugar) ★**:
 We can also go the other way, and use any operator as if it were a function, by wrapping it in parentheses:
-```
+
+```haskell
 Prelude> 1 + 1
 2
 Prelude> (+) 1 1
