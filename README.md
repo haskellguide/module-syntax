@@ -635,7 +635,8 @@ Do you remember the example we used when introducing the dollar operator? We sta
 f5 (f4 (f3 (f2 (f1 42))))
 ```
 and rewrote it to
-```
+
+```haskell
 f5 $ f4 $ f3 $ f2 $ f1 42
 ```
 
