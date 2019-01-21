@@ -385,11 +385,14 @@ x `divides` y = x `div` y == 0
 We already saw that one function that we defined could call another. But the real power of general computation comes when a function can call itself, i.e. when we employ recursion. Recursion is a very fundamental technique in functional programming, much more so than loops or iterators or such.
 
 Let us come up with a function that determines the number of digits in a given number. We first check if the number is already just one digit:
-```
+
+```haskell
 Prelude> countDigits n = if n < 10 then 1 else █
 ```
+
 At this point, we know that the number is larger than 10. So to count the digits, we would like to cut off one digit:
-```
+
+```haskell
 Prelude> countDigits n = if n < 10 then 1 else (n `div` 10)█
 ```
 and count the number of digits of *that* number
