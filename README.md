@@ -300,7 +300,8 @@ False
 But this gets repetitive quickly. And whenever we program something in a repetitive way, we try to recognize the *pattern* and abstract over the changing *parameter*, leaving only the common parts
 
 Here, the common pattern is ``x `mod` 10 == 0``, with a parameter named `x`. We can give this pattern a name, and use it instead:
-```
+
+```haskell
 Prelude> isRound x = x `mod` 10 == 0
 Prelude> isRound 5
 False
