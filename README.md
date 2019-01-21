@@ -338,14 +338,7 @@ Write a function `absoluteValue` with one parameter. If the parameter is negativ
 ```haskell
 absoluteValue x = if x < 0 then - x else x
 ```
-
 </details>
-::: Exercise
-
-:::
-
-::: Solution
-:::
 
 ::: Exercise
 Write a function `isHalfRound` that checks if a number is divisible by 5, by checking whether the last digit is 0 or 5.
