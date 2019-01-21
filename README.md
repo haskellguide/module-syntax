@@ -571,11 +571,10 @@ isMultipleOf3 x = fixEq sumDigits x == 3 || fixEq sumDigits x == 6 || fixEq sumD
 :::
 
 # anonymous functions
--------------------
 
 We defined a function `always1`, but it seems a bit silly to give a name to such a specialized and small concept. Therefore, Haskell allows us to define *anonymous functions* on the fly. The syntax is a backslash, followed by the parameter (or parameters), followed by the body of the function. So we can define `countDigits` and `sumDigits` without any helper functions like this:
 
-```
+```haskell
 Prelude> countDigits n = sumDigitsWith (\d -> 1) n
 Prelude> sumDigits n = sumDigitsWith (\d -> d) n
 ```
