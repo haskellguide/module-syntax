@@ -605,7 +605,7 @@ The definitions for `countCountDigits` and `sumSumDigits`:
 Prelude> countCountDigits = twice countCountDigits
 Prelude> sumSumDigits = twice sumDigits
 ```
-:::
+</details>
 
 Currying
 --------
