@@ -154,6 +154,9 @@ Prelude> const 23 42
 23
 ```
 
+<detail>
+<summary></summary>
+</detail>
 ::: Exercise
 Can you predict the result of the following?
 ```
