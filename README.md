@@ -592,6 +592,7 @@ Prelude> sumDigits = sumDigitsWith (\d -> d)
 
 It looks as if we just saved two characters. But what really just happened is that we shifted our perspective, and raised the level of abstraction by one layer. Instead of defining a `countDigits` as a function that takes a number and produces another number, we have defined `countDigits` as the result of instantiating the pattern `sumDigitsWith` with the function `(\d -> 1)`. At this level of thought, we do not care about the argument to `countDigits`, i.e. what it is called or so.
 
+### excercises
 ::: Exercise
 Which other recent definitions can be changed accordingly?
 :::
