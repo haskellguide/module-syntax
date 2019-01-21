@@ -325,10 +325,11 @@ Note that we defined the `isRound` by way of an equation. And it really is an eq
 
 <details>
 <summary>
+Discuss: Think of other programming language that have concepts called functions. Can you always replace a function call with the function definition? Does it change the meaning of the program?
 </summary>
 </details>
 ::: Exercise
-Discuss: Think of other programming language that have concepts called functions. Can you always replace a function call with the function definition? Does it change the meaning of the program?
+
 :::
 
 ::: Exercise
