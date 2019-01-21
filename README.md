@@ -278,11 +278,11 @@ Prelude> if -5 < 0 then 0 else 1
 
 The use of `if … then … else …` is actually not the most idiomatic way to code decisions in Haskell, and we will come back to that point later, but for now it is good enough.
 
-Function abstraction
---------------------
+# function abstraction
 
 Assume you want to check a bunch of numbers as to whether they are multiples of 10 (so called “round numbers” in German). You can do that using `mod` and `(==)`:
-```
+
+```haskell
 Prelude> 5 `mod` 10 == 0
 False
 Prelude> 10 `mod` 10 == 0
