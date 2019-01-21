@@ -240,7 +240,7 @@ Prelude> 3
 ```
 </details>
 
-# Booleans and branching
+# booleans and branching
 ----------------------
 
 Some cryptographers might be happy to only write code that always does the same thing (yay, no side effects), but most of us pretty quickly want to write branching code.
