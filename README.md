@@ -128,7 +128,8 @@ Prelude> mod 123 100
 We observe that to apply a function, we just write the function, followed by the arguments; no parenthesis or commas needed. This not only makes for more elegant and less noise code; but there is also a very deep and beautiful reason for this, which we will come to later.
 
 At this point, surely someone wants to know what happens when we divide by 0:
-```
+
+```haskell
 Prelude> div 123 0
 *** Exception: divide by zero
 ```
