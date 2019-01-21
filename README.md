@@ -425,7 +425,8 @@ Prelude> countDigits (10^12345)
 ```
 
 The fact that we can replace equals with equals does not change just because we use recursion. For example, we can figure out what `countDigits 789` does by replacing equals with equals:
-```
+
+```haskell
   countDigits 789
 = if 789 < 10 then 1 else countDigits (789 `div` 10) + 1
 = if False then 1 else countDigits (789 `div` 10) + 1
