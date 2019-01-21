@@ -224,9 +224,11 @@ This operator takes a function as the first argument, an argument as the second 
 
 I call this non-syntactic sugar, because the dollar operator it is not part of the built-in language, but can be define by anyone.
 
+### exercise
 <details>
 <summary>
-What is the result of
+What is the result of:
+
 ```haskell
 Prelude> (-) 5 $ div 16 $ (-) 10 $ 4 `div` 2
 ```
