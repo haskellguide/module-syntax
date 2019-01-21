@@ -340,14 +340,14 @@ absoluteValue x = if x < 0 then - x else x
 ```
 </details>
 
-::: Exercise
+<details>
+<summary>
 Write a function `isHalfRound` that checks if a number is divisible by 5, by checking whether the last digit is 0 or 5.
-:::
+</summary>
 
-::: Solution
 ```haskell
 isHalfRound x = x `div` 10 == 0 || x `div` 10 == 5
-```
+</details>
 :::
 
 ::: Exercise
