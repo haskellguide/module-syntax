@@ -347,6 +347,7 @@ Write a function `isHalfRound` that checks if a number is divisible by 5, by che
 
 ```haskell
 isHalfRound x = x `div` 10 == 0 || x `div` 10 == 5
+```
 </details>
 :::
 
