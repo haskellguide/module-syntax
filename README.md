@@ -93,7 +93,7 @@ Prelude> (2^2)^10
 
 In the last example we can see that Haskell interprets `a^b^c` as `a^(b^c)`, i.e. the power operator is *right associative*. It is worth noting that this information is not hard-coded in the compiler. Instead, when the operator is defined somewhere in a library, its associativity and precedence can be declared. We can ask the compiler about this information:
 
-```
+```haskell
 Prelude> :info (^)
 (^) :: (Num a, Integral b) => a -> b -> a 	-- Defined in ‘GHC.Real’
 infixr 8 ^
