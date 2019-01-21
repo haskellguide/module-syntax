@@ -4,7 +4,7 @@ Welcome to the syntax module of the [HaskellGuide study plan](https://github.com
 
 No software installation will be required at any stage as we have integrated with the lovely folks at GitHub Education and GitPod to deliver you a world class experience. With HaskellGuide you'll learn faster and start authoring code sooner. 
 
-In this module you'll be introduced to functional programming concepts, the syntax of Haskell and are provided with easy excercises to apply your learnings in a fully configured modern web-based IDE. We assume experience with programming but absolutely no exposure to functional programming concepts or Haskell.
+In this module you'll be introduced to functional programming concepts, the syntax of Haskell and you are provided with easy excercises to apply your learnings in a fully configured modern web-based IDE. We assume experience with programming but absolutely no exposure to functional programming concepts or Haskell.
 
 If you experience any isues at all, please open a GitHub issue and leave feedback. We ❤️ contributions and pull-requests.
 
@@ -23,6 +23,17 @@ Don't feel you aren't smart enough. Successful software engineers are smart, but
 # table of contents
 
 
+- [The basics of functional programming
+](#the-basics-of-functional-programming)
+- [Applying functions](#applying-functions)
+- [Function abstraction](#function-abstraction)
+- [Recursion](#recursion)
+- [Before you Get Started](#before-you-get-started)
+- [What you Won't See Covered](#what-you-wont-see-covered)
+- [Prerequisite Knowledge](#prerequisite-knowledge)
+- [The Daily Plan](#the-daily-plan)
+
+
 On the other hand, less words will be spent on how to approach writing the program, e.g. how to set up your tooling, how to please Haskell’s layout rules, how to design your data type, which libraries to pick, how to read error messages. That said, we hope that even Haskell programmers will gain useful insight from tutorial.
 
 Nevertheless it is hard to understand a programming paradigm without writing any code, so there will some amount of hands-on work to be done, especially early on, when we start with a introduction to basic functional programming.
@@ -34,19 +45,18 @@ The exercises are all very small, in the order of minutes, and are meant to be d
 Some sections are marked with ★. These are optional in the sense that the following material does not rely heavily on them. If time is short, e.g. during a workshop, they can be skipped, and the participants can be invited to come back to them on their own.
 
 
-The basics of functional programming
-====================================
+
+# the basics of functional programming
 
 Functional program is the the art of thinking about *data* and how the new data is calculated from old data, rather than thinking about how to *modify* data.
 
-Numbers and arithmetic operators
---------------------------------
+## numbers and arithmetic operators
 
 The simplest form of data are numbers, and basic arithmetic is one way of creating new numbers from old numbers.
 
 To play around with this, start the Haskell REPL (“read-eval-print-loop”) by running `ghci` (or maybe on [tryhaskell.org](https://tryhaskell.org/)), and enter some numbers, and some of the usual arithmetic operations:
 
-```
+```haskell
 $ ghci
 GHCi, version 8.4.4: http://www.haskell.org/ghc/  :? for help
 Prelude> 1
@@ -61,13 +71,13 @@ Prelude> (2 + 3) * 4
 
 At this point we can tell that the usual precedence rules apply (i.e. the [PEMDAS rule](https://en.wikipedia.org/wiki/Order_of_operations#Mnemonics)).
 
-```
+```haskell
 Prelude> 0 - 1
 -1
 ```
 Numbers can be negative…
 
-```
+```haskell
 Prelude> 2^10
 1024
 Prelude> 2^2^10
@@ -106,8 +116,7 @@ Look up the precedences of the other arithmetic operations, and see how that cor
 The precedences of `(+)` and `(-)` are the same, and smaller than the precedence of `(*)`, which is again shorter than the precedence of `(^)`.
 :::
 
-Applying Functions
-------------------
+# applying functions
 
 So far we have a calculator (which is not useless, I sometimes use `ghci` as a calculator). But to get closer to functional programming, let us look at some functions that are already available to use.
 
