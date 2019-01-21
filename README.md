@@ -458,7 +458,8 @@ sumDigits n = if n < 10 then n else sumDigits (n `div` 10) + (n `mod` 10)
 We created functions when we took expressions that followed a certain pattern, and abstracted over a number that occurred therein. But the thing we can abstract over does not have to be just a simple number. It could also be a function!
 
 Consider the task of calculating the number of digits in the number of digits of a number:
-```
+
+```haskell
 Prelude> countDigits (countDigits 5)
 1
 Prelude> countDigits (countDigits 10)
