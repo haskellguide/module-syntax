@@ -246,7 +246,8 @@ Prelude> 3
 Some cryptographers might be happy to only write code that always does the same thing (yay, no side effects), but most of us pretty quickly want to write branching code.
 
 As you would expect, Haskell has the usual operators to compare numbers:
-```
+
+```haskell
 Prelude> 1 + 1 == 2
 True
 Prelude> 4 < 5
@@ -256,6 +257,7 @@ False
 Prelude> 23 /= 42
 True
 ```
+
 We see that there are values `True` and `False`. We can combine them using the usual Boolean operators:
 ```
 Prelude> 1 + 1 == 2 && 5 < 4
