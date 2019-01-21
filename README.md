@@ -646,15 +646,17 @@ Now imagine we want to abstract over 42:
 many_fs x = f5 (f4 (f3 (f2 (f1 x))))
 ```
 This function really is just the composition of a bunch of function. So an idiomatic way of writing it would be
-```
+
+```haskell
 many_fs  = f5 . f4 . f3 . f2 . f1
 ```
+
 where again, the actual value is no longer the emphasis, but rather the functions.
 
 The value `x` is sometimes called the point (as in geometry), and this style of programming is called *points-free* (or sometimes *pointless*).
 
 
-Laziness ★
+# laziness ★
 ----------
 
 As a final bit in this section, let’s talk about laziness. Most often this can be ignored when reading Haskell code, and in general laziness is not as important (or as bad) as some people say it is. But it plays an important role in Haskell’s support for abstraction, so let’s briefly look at it.
