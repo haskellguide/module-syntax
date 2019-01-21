@@ -233,17 +233,13 @@ What is the result of:
 Prelude> (-) 5 $ div 16 $ (-) 10 $ 4 `div` 2
 ```
 </summary>
+The result is:
+```haskell
+Prelude> 3
+```
 </details>
-::: Exercise
-:::
 
-::: Solution
-```
-3
-```
-:::
-
-Booleans and branching
+# Booleans and branching
 ----------------------
 
 Some cryptographers might be happy to only write code that always does the same thing (yay, no side effects), but most of us pretty quickly want to write branching code.
