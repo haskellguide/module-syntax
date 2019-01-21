@@ -657,12 +657,12 @@ The value `x` is sometimes called the point (as in geometry), and this style of 
 
 
 # laziness ★
-----------
 
 As a final bit in this section, let’s talk about laziness. Most often this can be ignored when reading Haskell code, and in general laziness is not as important (or as bad) as some people say it is. But it plays an important role in Haskell’s support for abstraction, so let’s briefly look at it.
 
 Laziness means that an expression is evaluated as late as possible, i.e. when it is needed to make a branching decision, or when it is to be printed on the screen. We can only observe when things are being evaluated when we have side-effects, and the only side effects we can produce so far are non-termination and exceptions. So let us use division by zero to observe that the first argument to `const` is used, but the second one is not:
-```
+
+```haskell
 Prelude> 0 `div` 0
 *** Exception: divide by zero
 Prelude> const (0 `div` 0) 1
