@@ -259,7 +259,8 @@ True
 ```
 
 We see that there are values `True` and `False`. We can combine them using the usual Boolean operators:
-```
+
+```haskell
 Prelude> 1 + 1 == 2 && 5 < 4
 False
 Prelude> 1 + 1 == 2 || 5 < 4
@@ -267,7 +268,8 @@ True
 ```
 
 And finally, we can use `if … then … else …` to branch based on such a Boolean expression:
-```
+
+```haskell
 Prelude> if 5 < 0 then 0 else 1
 1
 Prelude> if -5 < 0 then 0 else 1
