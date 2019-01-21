@@ -620,15 +620,18 @@ Because writing code that passes functions around and modifies them (like in `tw
 ```haskell
 Prelude> (f . g) x = f (g x)
 ```
+
 The dot is a poor approximation of the mathematical symbol for function composition, “∘”, and can be read as “`f` after `g`”. Note `x` is passed to `g` first, and then the result to `f`.
 
 It looks like a pretty vacuous definition, but it is very useful in writing high-level code. For example, it allows us the following, nicely abstract definition of `twice`:
-```
+
+```haskell
 Prelude> twice f = f . f
 ```
 
 Do you remember the example we used when introducing the dollar operator? We started with
-```
+
+```haskell
 f5 (f4 (f3 (f2 (f1 42))))
 ```
 and rewrote it to
