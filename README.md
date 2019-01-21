@@ -718,7 +718,7 @@ In fact, many Haskellers prefer to do type-driven development: First think about
 
 Besides communicating with the compiler, types are also crucial in communicating with your fellow developers and/or users of your API. For many functions, the type alone, or the type and the name, is sufficient to tell you what it does.
 
-Tooling interlude: Editing files ★
+# tooling interlude: Editing files ★
 ----------------------------------
 
 At this point, we should switch from working exclusively in the REPL to writing an actual Haskell file. We can start by creating a file `Types.hs`, and put in the code from the previous section:
