@@ -367,7 +367,8 @@ Prelude> hasLastDigit x y = x `div` 10 == y
 ```
 
 This allows us to define `isHalfRound` as follows:
-```
+
+```haskell
 Prelude> isHalfRound x = x `hasLastDigit` 0 || x `hasLastDigit` 5
 ```
 which, if you read it out, is almost a transliteration of the specification! Here we see how abstraction, together with good naming and syntax, can produce very clear and readable code.
