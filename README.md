@@ -210,7 +210,8 @@ Prelude> (+) 1 1
 
 **The dollar operator (non-syntactic sugar) ★**:
 Consider an expression that takes a number, and applies a number of functions , maybe with arguments, to it, such as:
-```
+
+```haskell
 f5 (f4 (f3 (f2 (f1 42))))
 ```
 Passing a piece of data through a number of functions is very common, and some (including me) greatly dislike the accumulation of parentheses there. Therefore, it is idiomatic to use the `($)` operator:
