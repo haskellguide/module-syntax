@@ -106,8 +106,8 @@ Let us ignore the first line (which is the type signature): The `r` in `infixr` 
 Both operator are left-associative, so that `10 - 2 + 3 - 4` means `((10 - 2) + 3) - 4` as expected.
 </details>
 
-:::
-
+<details>
+</details>
 ::: Exercise
 Look up the precedences of the other arithmetic operations, and see how that corresponds to the PEMDAS rule.
 :::
