@@ -214,8 +214,10 @@ Consider an expression that takes a number, and applies a number of functions , 
 ```haskell
 f5 (f4 (f3 (f2 (f1 42))))
 ```
+
 Passing a piece of data through a number of functions is very common, and some (including me) greatly dislike the accumulation of parentheses there. Therefore, it is idiomatic to use the `($)` operator:
-```
+
+```haskell
 f5 $ f4 $ f3 $ f2 $ f1 42
 ```
 This operator takes a function as the first argument, an argument as the second argument, and applies the function to the argument. In that way, it is exactly the same as function application. But it is *right-associative* (instead of left-associative) and has the *lowest precedence* (instead of the highest precedence). An easier way of reading such code is to read `($)` as “the same as parenthesis around the rest of the line”.
