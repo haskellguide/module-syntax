@@ -133,18 +133,21 @@ At this point, surely someone wants to know what happens when we divide by 0:
 Prelude> div 123 0
 *** Exception: divide by zero
 ```
+
 Haskell has exceptions, they can even be caught etc., but let us talk about that later.
 
 Of course, if the argument is not just a single number, we somehow have to make clear where the argument begins and ends:
-```
+
+```haskell
 Prelude> div (120 + 3) (10 ^ 2)
 1
 ```
+
 (If you leave out the parenthesis, you get a horrible error messages). In technical terms, we can say that function application behaves like a left-associative operator of highest precedence. But it is easier to just remember **function application binds most tightly**. (Exception: Record construction and update binds even more tightly, although some consider that a design flaw.)
 
 Just to have more examples, here are two other functions that we can play around with:
 
-```
+```haskell
 Prelude> id 42
 42
 Prelude> const 23 42
