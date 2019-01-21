@@ -547,6 +547,7 @@ This single mechanism -- abstracting over functions -- can [replace thick volume
 Note that if one would have to abstract `countDigits` and `sumDigits` to `sumDigitsWith` in practice, one would probably not rewrite them first with `id` etc., but just look at them and come up with `sumDigitsWith` directly.
 
 ### excercises
+
 <details>
 <summary>
 Write a (recursive) function `fixEq` so that `fixEq f x` repeatedly applies `f` to `x` until the result does not change.
@@ -557,17 +558,19 @@ fixEq f x = if f x == x then x else fixEq f (f x)
 ```
 </details>
 
-::: Exercise
+<details>
+<summary>
 Use this function and `countDigits` to write a function `isMultipleOf3` so that `isMultipleOf3 x` is true if repeatedly applying `countDigits` to `x` results in 3 or 9.
-:::
+</summary>
 
-::: Solution
+
 ```haskell
 isMultipleOf3 x = fixEq sumDigits x == 3 || fixEq sumDigits x == 6 || fixEq sumDigits x == 9
 ```
+</details>
 :::
 
-Anonymous functions
+# anonymous functions
 -------------------
 
 We defined a function `always1`, but it seems a bit silly to give a name to such a specialized and small concept. Therefore, Haskell allows us to define *anonymous functions* on the fly. The syntax is a backslash, followed by the parameter (or parameters), followed by the body of the function. So we can define `countDigits` and `sumDigits` without any helper functions like this:
