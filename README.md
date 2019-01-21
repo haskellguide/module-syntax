@@ -157,8 +157,11 @@ Prelude> const 23 42
 <details>
 <summary>Can you predict the result of the following?
 
+```haskell
 Prelude> 1 + const 2 3 + 4
+```
 </summary>
+Prelude> 7
 </details>
 ::: Exercise
 ```
@@ -167,7 +170,6 @@ Prelude> 1 + const 2 3 + 4
 
 ::: Solution
 ```
-7
 ```
 :::
 
