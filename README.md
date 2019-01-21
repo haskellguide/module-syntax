@@ -107,6 +107,7 @@ Both operator are left-associative, so that `10 - 2 + 3 - 4` means `((10 - 2) + 
 </details>
 
 <details>
+<summary></summary>
 </details>
 ::: Exercise
 Look up the precedences of the other arithmetic operations, and see how that corresponds to the PEMDAS rule.
