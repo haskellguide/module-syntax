@@ -100,6 +100,7 @@ infixr 8 ^
 ```
 Let us ignore the first line (which is the type signature): The `r` in `infixr` tells us that the `(^)` operator is right-associative. And the number is the precedence; a higher number means that this operator binds more tightly.
 
+### excercises
 <details>
 <summary>What associativity do you expect for `(+)` and `(-)`? Verify your expectation.
 </summary>
