@@ -387,18 +387,18 @@ We already saw that one function that we defined could call another. But the rea
 Let us come up with a function that determines the number of digits in a given number. We first check if the number is already just one digit:
 
 ```haskell
-Prelude> countDigits n = if n < 10 then 1 else █
+Prelude> countDigits n = if n < 10 then 1 else
 ```
 
 At this point, we know that the number is larger than 10. So to count the digits, we would like to cut off one digit:
 
 ```haskell
-Prelude> countDigits n = if n < 10 then 1 else (n `div` 10)█
+Prelude> countDigits n = if n < 10 then 1 else (n `div` 10)
 ```
 and count the number of digits of *that* number
 
 ```haskell
-Prelude> countDigits n = if n < 10 then 1 else countDigits (n `div` 10)█
+Prelude> countDigits n = if n < 10 then 1 else countDigits (n `div` 10)
 ```
 and, of course, add one to that number:
 ```
