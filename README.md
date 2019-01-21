@@ -161,7 +161,7 @@ Prelude> const 23 42
 Prelude> 1 + const 2 3 + 4
 ```
 </summary>
-
+The answer is:
 ```haskell
 Prelude> 7
 ```
