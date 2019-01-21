@@ -613,11 +613,11 @@ We have already seen functions that *receive* a function as an argument. The way
 
 We can *think* of `twice` has having two arguments (the function `f`, and the value `x`), but really, `twice` is a function that takes one argument (the function `f`), and returns another function, that then takes the value `x`. This “other” function is what we named in the above definition of `sumSumDigits`.
 
-The composition operator ★
---------------------------
+# the composition operator ★
 
 Because writing code that passes functions around and modifies them (like in `twice` or `sumDigitsWith`) is so important in this style of programming, I should at this point introduce the composition operator. It is already pre-defined, but we can define it ourselves:
-```
+
+```haskell
 Prelude> (f . g) x = f (g x)
 ```
 The dot is a poor approximation of the mathematical symbol for function composition, “∘”, and can be read as “`f` after `g`”. Note `x` is passed to `g` first, and then the result to `f`.
