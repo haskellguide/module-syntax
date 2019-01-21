@@ -396,7 +396,8 @@ At this point, we know that the number is larger than 10. So to count the digits
 Prelude> countDigits n = if n < 10 then 1 else (n `div` 10)█
 ```
 and count the number of digits of *that* number
-```
+
+```haskell
 Prelude> countDigits n = if n < 10 then 1 else countDigits (n `div` 10)█
 ```
 and, of course, add one to that number:
