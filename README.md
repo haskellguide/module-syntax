@@ -348,19 +348,17 @@ Write a function `isHalfRound` that checks if a number is divisible by 5, by che
 ```haskell
 isHalfRound x = x `div` 10 == 0 || x `div` 10 == 5
 ```
-
 </details>
-:::
 
-::: Exercise
+<details>
+<summary>
 Write a function `isEven` that checks if a number is divisible by 2, by checking whether the last digit is 0, 2, 4, 6, 8.
-:::
+</summary>
 
-::: Solution
 ```haskell
 isEven x = x `div` 10 == 0 || x `div` 10 == 2 || x `div` 10 == 4 || x `div` 10 == 6 || x `div` 10 == 8
 ```
-:::
+</details>
 
 Of course, you can abstract over more than one parameter. In the last exercise, you had to write something like ``x `div` 10 == y`` a lot. So it makes sense to abstract over that:
 
