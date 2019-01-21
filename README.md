@@ -163,15 +163,6 @@ Prelude> 1 + const 2 3 + 4
 </summary>
 Prelude> 7
 </details>
-::: Exercise
-```
-```
-:::
-
-::: Solution
-```
-```
-:::
 
 **A note on syntactic sugar:** Haskell is a high-calorie language: There is lots of syntactic sugar. Syntactic sugar refers to when there are alternative ways of writing something that *look* different, but *behave* the same. The goal is to allow the programmer to write the code in a way that best suits the reader, which is good, but it also means that a reader needs to know about the sugar.
 
