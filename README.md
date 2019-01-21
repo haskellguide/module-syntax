@@ -118,7 +118,7 @@ So far we have a calculator (which is not useless, I sometimes use `ghci` as a c
 
 To stay within the realm of arithmetic (if only to have something to talk about), let us play with the `div` and `mod` functions. These do what you would expect from them:
 
-```
+```haskell
 Prelude> div 123 100
 1
 Prelude> mod 123 100
