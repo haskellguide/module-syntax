@@ -224,7 +224,10 @@ This operator takes a function as the first argument, an argument as the second 
 
 I call this non-syntactic sugar, because the dollar operator it is not part of the built-in language, but can be define by anyone.
 
-
+<details>
+<summary>
+</summary>
+</details>
 ::: Exercise
 What is the result of
 ```
