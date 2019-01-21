@@ -362,7 +362,7 @@ isEven x = x `div` 10 == 0 || x `div` 10 == 2 || x `div` 10 == 4 || x `div` 10 =
 
 Of course, you can abstract over more than one parameter. In the last exercise, you had to write something like ``x `div` 10 == y`` a lot. So it makes sense to abstract over that:
 
-```
+```haskell
 Prelude> hasLastDigit x y = x `div` 10 == y
 ```
 
