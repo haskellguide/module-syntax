@@ -108,13 +108,13 @@ Both operator are left-associative, so that `10 - 2 + 3 - 4` means `((10 - 2) + 
 
 <details>
 <summary>Look up the precedences of the other arithmetic operations, and see how that corresponds to the PEMDAS rule.</summary>
+The precedences of `(+)` and `(-)` are the same, and smaller than the precedence of `(*)`, which is again shorter than the precedence of `(^)`.
 </details>
 ::: Exercise
 
 :::
 
 ::: Solution
-The precedences of `(+)` and `(-)` are the same, and smaller than the precedence of `(*)`, which is again shorter than the precedence of `(^)`.
 :::
 
 # applying functions
