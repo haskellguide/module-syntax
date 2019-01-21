@@ -641,7 +641,8 @@ f5 $ f4 $ f3 $ f2 $ f1 42
 ```
 
 Now imagine we want to abstract over 42:
-```
+
+```haskell
 many_fs x = f5 (f4 (f3 (f2 (f1 x))))
 ```
 This function really is just the composition of a bunch of function. So an idiomatic way of writing it would be
