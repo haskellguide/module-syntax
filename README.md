@@ -334,15 +334,17 @@ TODO
 <summary>
 Write a function `absoluteValue` with one parameter. If the parameter is negative, returns its opposite number, otherwise the number itself.
 </summary>
+
+```haskell
+absoluteValue x = if x < 0 then - x else x
+```
+
 </details>
 ::: Exercise
 
 :::
 
 ::: Solution
-```haskell
-absoluteValue x = if x < 0 then - x else x
-```
 :::
 
 ::: Exercise
