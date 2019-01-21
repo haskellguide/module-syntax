@@ -693,9 +693,10 @@ Prelude> 10 `safeDiv` 5
 Prelude> 10 `safeDiv` 0
 0
 ```
+
 So that works. But it only works because Haskell is lazy. Consider what would happen in a strict language, where expressions are evaluated before passed to a function:
 
-```
+```haskell
   10 `safeDiv` 0
 = unlessZero 0 (10 `div` 0)
 = unlessZero 0 (*** Exception: divide by zero
