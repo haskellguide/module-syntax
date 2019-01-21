@@ -481,7 +481,8 @@ Prelude> countCountDigits (10^123)
 ```
 
 But now consider we also want `sumSumDigits`:
-```
+
+```haskell
 Prelude> sumSumDigits n = sumDigits (sumDigits n)
 Prelude> sumSumDigits (9^9)
 9
@@ -494,7 +495,8 @@ Prelude> sumSumDigits (15^15)
 ```
 
 There is clearly a pattern that is shared by both `countCountDigits` and `sumSumDigits`: They both apply a function twice. And indeed, we can abstract over that pattern:
-```
+
+```haskell
 Prelude> twice f x = f (f x)
 Prelude> twice countDigits (15^15)
 2
@@ -504,7 +506,8 @@ Prelude> twice sumDigits (15^15)
 This is our first *higher order function*, and it is called so because it is a function that take another function as an argument. More precisely, it is called a second-order function, because it takes a normal, i.e. first-order function, as an argument. Abstracting over a second order function yields a third order function, and so on. Up to [sixth-order functions](https://doi.org/10.1017/S0956796898003001) are seen in the wild.
 
 If you look at the last two lines, we again see a common pattern. And abstracting over that, we recover very nice and declarative definitions for `countCountDigits` and `sumSumDigits`:
-```
+
+```haskell
 Prelude> countCountDigits x = twice countDigits x
 Prelude> sumSumDigits x = twice sumDigits x
 ```
