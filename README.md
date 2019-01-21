@@ -375,12 +375,12 @@ which, if you read it out, is almost a transliteration of the specification! Her
 
 **Infix operator application again (syntactic sugar)**:
 By the way, you can use infix operator syntax already when defining a function:
-```
+
+```haskell
 x `divides` y = x `div` y == 0
 ```
 
-Recursion
----------
+# recursion
 
 We already saw that one function that we defined could call another. But the real power of general computation comes when a function can call itself, i.e. when we employ recursion. Recursion is a very fundamental technique in functional programming, much more so than loops or iterators or such.
 
