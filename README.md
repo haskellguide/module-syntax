@@ -332,10 +332,11 @@ TODO
 
 <details>
 <summary>
+Write a function `absoluteValue` with one parameter. If the parameter is negative, returns its opposite number, otherwise the number itself.
 </summary>
 </details>
 ::: Exercise
-Write a function `absoluteValue` with one parameter. If the parameter is negative, returns its opposite number, otherwise the number itself.
+
 :::
 
 ::: Solution
