@@ -549,15 +549,13 @@ Note that if one would have to abstract `countDigits` and `sumDigits` to `sumDig
 ### excercises
 <details>
 <summary>
-::: Exercise
 Write a (recursive) function `fixEq` so that `fixEq f x` repeatedly applies `f` to `x` until the result does not change.
-:::
+</summary>
 
-::: Solution
 ```haskell
 fixEq f x = if f x == x then x else fixEq f (f x)
 ```
-:::
+</details>
 
 ::: Exercise
 Use this function and `countDigits` to write a function `isMultipleOf3` so that `isMultipleOf3 x` is true if repeatedly applying `countDigits` to `x` results in 3 or 9.
