@@ -234,6 +234,7 @@ Prelude> (-) 5 $ div 16 $ (-) 10 $ 4 `div` 2
 ```
 </summary>
 The result is:
+
 ```haskell
 Prelude> 3
 ```
